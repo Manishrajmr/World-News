@@ -16,6 +16,9 @@
   --rtl-font-family: 'Montserrat', sans-serif;
   --pattern-color1: rgba(200,200,200,0.10);
   --pattern-color2: rgba(220,220,220,0.10);
+
+  --radius: 1rem;
+  --destructive-foreground: oklch(0.985 0 0);
 }
 
 .dark {
@@ -33,4 +36,9 @@
   --rtl-font-family: 'Montserrat', sans-serif;
   --pattern-color1: rgba(230,230,230,0.15);
   --pattern-color2: rgba(240,240,240,0.15);
+  --destructive-foreground: oklch(0.985 0 0);
 }
+@theme inline {
+  --color-destructive-foreground: var(--destructive-foreground);
+}
+
